@@ -3,7 +3,7 @@
 using Say;
 
 ConsoleCommandDispatcher.DispatchCommand(
-    new[] { new SayCommand() },
+    new ConsoleCommand[] { new SayCommand(), new ServeCommand() },
     args, Console.Out);
 
 class SayCommand : VoiceCommand
