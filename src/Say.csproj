@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <Deterministic>True</Deterministic>
+    <Version>0.0.1</Version>
+    <Authors>lostmsu</Authors>
+    <Description>Simple command-line tool that reads text aloud</Description>
+    <PackageProjectUrl>https://github.com/lostmsu/Say</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/lostmsu/Say.git</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ManyConsole.CommandLineUtils" Version="1.1.8-alpha" />
+    <PackageReference Include="System.Speech" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>
