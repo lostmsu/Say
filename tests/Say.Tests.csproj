@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <LangVersion>10.0</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsTestProject>true</IsTestProject>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.10.1" PrivateAssets="all" />
+    <PackageReference Include="MSTest.TestAdapter" Version="4.4.1" PrivateAssets="all" />
+    <PackageReference Include="MSTest.TestFramework" Version="4.4.1" PrivateAssets="all" />
+    <ProjectReference Include="..\src\Say.csproj" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Speech" />
+  </ItemGroup>
+</Project>
